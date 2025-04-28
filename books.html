@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readers' Haven - Books</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Readers' Haven</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="books.html" class="active">Books</a>
+                <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="hamburger">☰</div>
+        </div>
+    </nav>
+
+    <section class="books">
+        <h2>Our Collection</h2>
+        <div class="book-controls">
+            <input type="text" id="search" placeholder="Search books...">
+            <select id="sort">
+                <option value="title-asc">Title (A-Z)</option>
+                <option value="price-asc">Price (Low to High)</option>
+                <option value="price-desc">Price (High to Low)</option>
+            </select>
+            <div class="filter-buttons">
+                <button data-filter="all">All</button>
+                <button data-filter="fiction">Fiction</button>
+                <button data-filter="non-fiction">Non-Fiction</button>
+                <button data-filter="mystery">Mystery</button>
+            </div>
+        </div>
+        <div class="book-grid" id="book-grid"></div>
+    </section>
+
+    <div id="toast" class="toast"></div>
+    <button id="back-to-top" class="back-to-top">↑</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

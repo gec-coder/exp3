@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readers' Haven - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Readers' Haven</div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="books.html">Books</a>
+                <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="hamburger">☰</div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Your Next Great Read</h1>
+            <p>Explore our handpicked collection of books for every taste and imagination.</p>
+            <a href="books.html" class="btn">Browse Books</a>
+        </div>
+    </section>
+
+    <div id="toast" class="toast"></div>
+    <button id="back-to-top" class="back-to-top">↑</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
